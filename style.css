@@ -1,13 +1,10 @@
-body {
-  color: white;
-  background-color: #011627;
-}
-
 button {
-  height: 200px;
-  width: 200px;
-  margin: 50px;
-  color: black;
-  background-color: #EE964B;
-  font-family: monospace;
+    font-family: monospace;
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    background-color: #026C7C;
+    color: #F6F7F8;
+    font-size: 16px;
+    border: 2px solid #F6F7F8;
 }
