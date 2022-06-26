@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Changes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-    <button id="buttonSequence"> Sequence </button>
-    <button id="buttonCurve"> Curve </button>
+    <center>
+      <!-- <button id="impulseB">Load Impulse Response</button> -->
+      <h1>Granulator</h1>
+      <label for="window times" name="window-times">Window Values</label>
+      <label for="second-level" name="second-level">Second Level Value</label>
+      <input id="second-level" name="second-level" type="range" min="0" max="100" value="0.3" />
+      <p id="second-level-indicator"></p>
+
+      <label for="beforelast-level" name="beforelast-level">Before last Level Value</label>
+      <input id="beforelast-level" name="beforelast-level" type="range" min="0" max="100" value="0.3" />
+      <p id="beforelast-level-indicator"></p>
+
+      <label for="exponent" name="exponent">Exponent Levels Window</label>
+      <input id="exponent" name="exponent" type="range" min="0.2" max="10" value="1" />
+      <p id="exponent-indicator"></p>
+
+
+      <label for="overlap-time">Overlap Time</label>
+      <input id="overlap-time" name="overlap-time" type="range" min="1" max="100" value="8" />
+      <p id="overlap-time-indicator"></p>
+
+      <label for="grain-duration">Grain Duration</label>
+      <input id="grain-duration" name="grain-duration" type="range" min="1" max="100" value="10" />
+      <p id="grain-duration-indicator"></p>
+
+      <!-- <label for="reverb-gate-chance">Reverb Gate Chance</label>
+      <input id="reverb-gate-chance" name="reverb-gate-chance" type="range" min="0" max="100" value="50" />
+      <p id="reverb-gate-chance-indicator"></p> -->
+      <label for="pos">Panning L/R biasing</label>
+      <input id="pos" type="range" min="0" max="100" value="50" />
+      <p id="pos-indicator"></p>
+
+      <label for="total-time">Total Time</label>
+      <input id="total-time" type="range" min="1" max="10" value="5" />
+      <p id="total-time-indicator"></p>
+
+      <button id="play">Play!</button>
+    </center>
+
+
+
+    <script
+        src="other.js"></script>
+    <script src="app.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+
   </body>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
 </html>
